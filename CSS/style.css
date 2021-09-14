@@ -82,16 +82,20 @@ h2::before {
   padding-bottom: 10px;
 }
 
-.check-green:before {
-  content: '\2713 ';
+/*check mark*/
+.check-red:before, .check-green:before {
   font-size: 12px;
-  color: #79cab7;
   display: inline-block;
   width: 15px;
   height: 15px;
   line-height: 15px;
   text-align: center;
   border-radius: 50%;
+}
+
+.check-green:before {
+  content: '\2713 ';
+  color: #79cab7;
   border: 2px solid#79cab7;
 }
 
@@ -99,12 +103,6 @@ h2::before {
   content: '\2717 ';
   font-size: 12px;
   color: red;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  line-height: 15px;
-  text-align: center;
-  border-radius: 50%;
   border: 2px solid red;
 }
 
@@ -145,13 +143,4 @@ h2::before {
 .sales{
   width: 35px;
   background-color: #b0c926;
-}
-
-.checkmark {
-  display:inline-block;
-  width: 22px;
-  height:22px;
-  -ms-transform: rotate(45deg); /* IE 9 */
-  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
 }
