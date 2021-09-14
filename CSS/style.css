@@ -71,6 +71,7 @@ body {
 
 h2 {
   font-size: 18px;
+  padding-bottom: 10px;
 }
 
 h2::before {
@@ -78,15 +79,31 @@ h2::before {
 }
 
 .check-green, .check-red {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .check-green:before {
-  content: '\2705 ';
+  content: '\2713 ';
+  font-size: 12px;
+  color: #79cab7;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid#79cab7;
 }
 
 .check-red:before {
-  content: '\274C ';
+  content: '\2717 ';
+  font-size: 12px;
+  color: red;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid red;
 }
 
 /*button and color*/
