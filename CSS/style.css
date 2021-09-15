@@ -5,14 +5,16 @@ box-sizing: border-box;
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f6f8f9;
 }
 
 .container {
   width: 70%;
   margin: 0 auto;
+  padding: 15px 50px;
   background-color: white;
+  border-radius: 5px;
 }
 
 .one {
@@ -20,13 +22,13 @@ body {
 }
 
 .two {
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /*******header*******/
 .headline {
   height: 100%;
+  padding: 10px 20px;
   background-color: white;
   margin-bottom: 3%;
 }
@@ -37,56 +39,55 @@ body {
 }
 
 #logo-text {
-  font-size: 38px;
-  color: black;
+  font-size: 40px;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 /*******main*******/
 
-#task, #section {
-  margin: 10px 2px;
+.task, .section {
   padding: 6px 8px;
   border-radius: 5px;
   font-size: 10px;
   border-color: white;
+  cursor: pointer;
 }
 
 /*button*/
-#task {
-  margin-left: 50px;
+.task {
   color: white;
   background-color: #47adf1;
   border: 1px solid #47adf1;
 }
 
-#section {
+.section {
+  margin-left: 10px;
   color: grey;
   background-color: white;
   border: 1px solid grey;
 }
 
-/*start paragraph*/
-.paragraph {
-  margin-left: 50px;
-  padding-top: 25px;
-}
+/*start list*/
+ul {
+  list-style-type: none;
+  }
+
+  li {
+    padding: 8px 0;
+  }
 
 h2 {
   font-size: 18px;
-  padding-bottom: 10px;
 }
 
 h2::before {
-  content: '\25BC ';
+  content: '\23F7';
 }
 
-.check-green, .check-red {
-  padding-bottom: 10px;
-}
 
 /*check mark*/
-.check-red:before, .check-green:before {
+.check-green::before, .check-red::before {
   font-size: 12px;
   display: inline-block;
   width: 15px;
@@ -94,23 +95,23 @@ h2::before {
   line-height: 15px;
   text-align: center;
   border-radius: 50%;
+  margin-right: 5px;
 }
 
-.check-green:before {
+.check-green::before {
   content: '\2713 ';
   color: #79cab7;
   border: 2px solid#79cab7;
 }
 
-.check-red:before {
+.check-red::before {
   content: '\2717 ';
-  font-size: 12px;
   color: red;
   border: 2px solid red;
 }
 
-/*button and color*/
-.button {
+/*tag and color*/
+.tag {
   display: inline-block;
   width: 60px;
   height: 20px;
@@ -143,7 +144,7 @@ h2::before {
   background-color: #d863a1;
 }
 
-.sales{
+.sales {
   width: 35px;
   background-color: #b0c926;
 }
